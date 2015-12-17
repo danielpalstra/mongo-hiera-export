@@ -1,0 +1,16 @@
+---
+:backends:
+  - yaml
+:yaml:
+  :datadir: /home/dbxdap/gocode/src/github.com/danielpalstra/mongo-hiera-export/hieradata
+:hierarchy:
+  - "%{hostname}"
+  - "%{project}-%{environment}"
+  - "%{project}-%{type}-%{role}"
+  - "%{project}"
+  - "%{type}-%{environment}"
+  - "%{type}-%{size}"
+  - "%{type}-%{role}"
+  - "%{type}"
+  - "%{environment}"
+  - common
